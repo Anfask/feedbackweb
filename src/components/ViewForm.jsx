@@ -4,10 +4,11 @@ import React, { useEffect, useState } from "react";
 const ViewForm = () => {
   const [datas, setDatas] = useState([]);
   useEffect(() => {
+    // .get("https://anfaskaloor.online/feedback")
     axios
-      .get("https:anfaskaloor.online/feedback")
+      .get("/feedback")
       .then((data) => setDatas(data?.data))
-      .catch((err) => alert("Please try again"));
+      .catch((err) => console.log(err));
   }, []);
   return (
     <div className="table-view">

@@ -27,12 +27,18 @@ const RateForm = () => {
 
     // .post("http://54.90.234.200:3000/feedback", data)
     axios
-      .post("https:anfaskaloor.online/feedback", data)
+      .post("/feedback", data)
       .then((response) => {
-        alert("Thank for your review");
+        alert("Thank for your feedback");
         console.log(response);
+        setStar(0);
+        setName("");
+        setEmail("");
+        setInstitution("");
+        setPhone(null);
+        setMessage("");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => alert("Please try again"));
   };
 
   const inputs = document.querySelectorAll(".input");
