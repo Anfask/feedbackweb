@@ -1,6 +1,5 @@
 {
   "name": "feedback-web",
-  "homepage": "https://splendid-chebakia-e7726b.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
