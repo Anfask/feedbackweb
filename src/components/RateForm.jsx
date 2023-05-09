@@ -27,7 +27,7 @@ const RateForm = () => {
 
     // .post("http://54.90.234.200:3000/feedback", data)
     axios
-      .post("/feedback", data)
+      .post("https://anfaskaloor.online/feedback", data)
       .then((response) => {
         alert("Thank for your feedback");
         console.log(response);
