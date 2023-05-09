@@ -2,11 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const ViewForm = () => {
+  // .get("/feedback")
   const [datas, setDatas] = useState([]);
   useEffect(() => {
-    // .get("https://anfaskaloor.online/feedback")
     axios
-      .get("/feedback")
+      .get("https://anfaskaloor.online/feedback")
       .then((data) => setDatas(data?.data))
       .catch((err) => console.log(err));
   }, []);
